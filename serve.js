@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 routes(app);
 
-const PORT = 3000;
+const PORT =  process.env.PORT || 3000;
 app.listen(PORT,()=>{
     console.log('Servidor porta: '+ PORT);
 });
