@@ -1,7 +1,7 @@
 var user = {}
 
 user.get = function(req, res) {
-    res.send('user');
+    res.send('Innovation Team');
 }
 
 module.exports = user;
